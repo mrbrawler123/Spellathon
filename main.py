@@ -5,9 +5,7 @@ nltk.download("wordnet")
 print("\033[2J\033[H")
 print("SPELLATHON")
 time.sleep(2)
-print(
-    "This is where you can form words. First enter one or more compulsory letters. Then you can enter other letters which can be in the word. I will tell you all the possible words that can be made."
-)
+print("This is where you can form words. First enter one or more compulsory letters. Then you can enter other letters which can be in the word. I will tell you all the possible words that can be made.")
 time.sleep(1)
 from nltk.corpus import words
 from nltk.corpus import wordnet
@@ -46,7 +44,7 @@ for x in words_list:
 			if al == x_list[z]:
 				index_list.append(z)
 				continue
-		for y in optional_letters:
+		for y in optional_letters: 
 			if y == x_list[z]:
 				index_list.append(z)
 	if len(index_list) == len(x_list):
